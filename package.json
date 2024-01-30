@@ -1,0 +1,7 @@
+{
+  "name": "gamejs",
+  "scripts": {
+    "start": "yarn build && yarn serve"
+  },
+  "packageManager": "yarn@4.0.2"
+}
