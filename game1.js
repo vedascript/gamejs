@@ -13,7 +13,7 @@ image.src = "./shadow_dog.png";
 let frameX = 0;
 let frameY = 0;
 let gameFrame = 0;
-let animationType = "ko";
+let animationType = "idle";
 const spriteAnimations = [];
 const staggerFrames = 7;
 
@@ -29,6 +29,12 @@ const animationStates = [
   { name: "ko", frames: 12 },
   { name: "getHit", frames: 4 },
 ];
+
+const select = document.querySelector("#animations");
+
+select.addEventListener("change", (e) => {
+  animationType = e.target.value;
+});
 
 animationStates.forEach((state, index) => {
   const { name, frames } = state;
